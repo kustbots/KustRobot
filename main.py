@@ -73,9 +73,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Constants
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET", "your_secret_here")
-ADMIN_IDS = set(map(int, os.getenv("ADMIN_IDS", "").split(","))) if os.getenv("ADMIN_IDS") else set()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8343081797:AAF92rtr6_AMm8sHP40Tg-BiVczDmTR4lo4")
+WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET", "297310471047")
+ADMIN_IDS = set(map(int, os.getenv("ADMIN_IDS", "5268762773").split(","))) if os.getenv("ADMIN_IDS") else set()
 PORT = int(os.getenv("PORT", 5000))
 
 # Database setup
