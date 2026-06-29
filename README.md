@@ -81,13 +81,7 @@ KustRobot/
 
 <div align="center">
 
-[![Deploy on Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kustbots/KustRobot)
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https://github.com/kustbots/KustRobot)
-
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kustbots/KustRobot)
-
-[![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/kustbots/KustRobot&branch=main&name=kust-robot)
+[![Deploy on Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kustbots/KustRobot) [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https://github.com/kustbots/KustRobot) [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kustbots/KustRobot) [![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/kustbots/KustRobot&branch=main&name=kust-robot)
 
 </div>
 
