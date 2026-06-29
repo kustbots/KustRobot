@@ -1,0 +1,28 @@
+name: KustRobot
+services:
+  - name: kust-robot
+    type: web
+    git:
+      repository: github.com/kustbots/KustRobot
+      branch: main
+    build_command: pip install -r requirements.txt
+    run_command: python main.py
+    ports:
+      - port: 5000
+        protocol: http
+    routes:
+      - path: /
+        port: 5000
+    env:
+      - key: BOT_TOKEN
+        secret: true
+      - key: WEBHOOK_SECRET
+        secret: true
+      - key: MONGO_URI
+        secret: true
+      - key: ADMIN_IDS
+        secret: true
+      - key: DB_NAME
+        value: kustrobot
+      - key: PORT
+        value: "5000"

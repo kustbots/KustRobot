@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: KustRobot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: DB_NAME
+        value: kustrobot
+      - key: PORT
+        value: "5000"

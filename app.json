@@ -1,0 +1,50 @@
+{
+  "name": "KustRobot",
+  "description": "Open-source Telegram Group Management Bot — modular, webhook-based, MongoDB-powered.",
+  "repository": "https://github.com/kustbots/KustRobot",
+  "keywords": ["telegram", "bot", "group-management", "python", "mongodb", "flask"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram bot token from @BotFather",
+      "required": true
+    },
+    "WEBHOOK_SECRET": {
+      "description": "A random secret string used to secure your webhook endpoint",
+      "required": true,
+      "generator": "secret"
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI — use MongoDB Atlas for a free cloud database: https://mongodb.com/atlas",
+      "required": true
+    },
+    "ADMIN_IDS": {
+      "description": "Your Telegram user ID(s), comma-separated. Get yours by messaging @userinfobot",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "kustrobot",
+      "required": false
+    },
+    "PORT": {
+      "description": "Port for the web server",
+      "value": "5000",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "scripts": {
+    "postdeploy": "echo KustRobot deployed! Set your webhook to https://YOUR_APP.herokuapp.com/webhook/$WEBHOOK_SECRET"
+  }
+}
